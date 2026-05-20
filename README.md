@@ -78,13 +78,14 @@ The API is a standard Spring Boot fat-jar and runs on any provider that supports
 
 #### Render (recommended free tier)
 
+Render has no native Java runtime — select **Docker** and it will use the `api/Dockerfile` automatically.
+
 1. Push the repository to GitHub.
 2. In [Render](https://render.com), create a new **Web Service** and connect the repo.
 3. Set **Root Directory** to `api`.
-4. Set **Build Command** to `mvn package -DskipTests`.
-5. Set **Start Command** to `java -jar target/herbiboar-hiscore-api-1.0-SNAPSHOT.jar`.
-6. Add a **PostgreSQL** database from the Render dashboard and copy the connection values into the four environment variables above.
-7. Deploy — Render will build and start the service automatically on every push.
+4. Set **Runtime** to **Docker** (Render will detect the Dockerfile automatically).
+5. Add a **PostgreSQL** database from the Render dashboard and copy the connection values into the environment variables above.
+6. Deploy — Render builds the image and starts the container on every push.
 
 #### Railway
 
