@@ -14,7 +14,7 @@ public interface HerbiboarHiscoreConfig extends Config
 	)
 	default String apiBaseUrl()
 	{
-		return "https://your-api-host.com";
+		return "https://herbiboarhiscore.onrender.com";
 	}
 
 	@ConfigItem(

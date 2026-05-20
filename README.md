@@ -143,7 +143,7 @@ Once the plugin is loaded in the RuneLite client:
 |---|---|---|
 | API Base URL | URL of the deployed backend | `https://your-api-host.com` |
 
-Set **API Base URL** to the URL of your deployed backend (e.g. `https://herbiboar-hiscore.onrender.com`).
+Set **API Base URL** to the URL of your deployed backend (e.g. `https://herbiboarhiscore.onrender.com`).
 
 ### Deploying to the RuneLite Plugin Hub
 
